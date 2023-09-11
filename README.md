@@ -1,79 +1,54 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Expenses Tracking App
 
-# Getting Started
+Welcome to the Expenses Tracking App! This mobile application allows users to track their expenses, manage their financial transactions, and stay on top of their spending.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **User Authentication**: Users can create accounts or log in securely.
+- **Expense Tracking**: Add, edit, and delete expenses with ease.
+- **Expense Filtering**: Filter expenses by title, amount, or date.
+- **Total Amount**: View the total amount of expenses.
+- **Profile**: Check your profile and sign out when needed.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Technologies Used
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- **React Native**: The app is built using React Native, a popular framework for building cross-platform mobile applications.
+- **TypeScript**: TypeScript is used to add static typing to the JavaScript codebase, enhancing development and maintainability.
+- **Redux**: Redux is employed for state management, ensuring a predictable and consistent data flow.
+- **React Navigation**: React Navigation is utilized for seamless and intuitive navigation within the app.
 
-```bash
-# using npm
-npm start
+## Getting Started
 
-# OR using Yarn
-yarn start
-```
+To get started with the Expenses Tracking App, follow these steps:
 
-## Step 2: Start your Application
+1. Clone the repository to your local machine.
+2. Install the required dependencies using `npm install`.
+3. Run the app on an Android or iOS emulator using `npm run android` or `npm run ios`.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Usage
 
-### For Android
+1. Launch the app and sign in or create an account.
+2. Start adding expenses by navigating to the "Add Expense" screen.
+3. Filter and manage your expenses as needed.
+4. View the total amount spent on the home screen.
+5. Access your profile to sign out.
 
-```bash
-# using npm
-npm run android
+## Screenshots
 
-# OR using Yarn
-yarn android
-```
+![Screenshot 1](./screenshots/screenshot1.png)
+![Screenshot 2](./screenshots/screenshot2.png)
+![Screenshot 3](./screenshots/screenshot3.png)
 
-### For iOS
+## Contributing
 
-```bash
-# using npm
-npm run ios
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or create a pull request.
 
-# OR using Yarn
-yarn ios
-```
+## License
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+## Acknowledgments
 
-## Step 3: Modifying your App
+- Thanks to the React Native and TypeScript communities for their valuable resources and support.
 
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Happy expense tracking!
