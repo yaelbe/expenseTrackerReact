@@ -32,7 +32,7 @@ To get started with the Expenses Tracking App, follow these steps:
 3. Filter and manage your expenses as needed.
 4. View the total amount spent on the home screen.
 5. Access your profile to sign out.
-
+6. Multi users - If you logout and reenter your name you will your expenses
 ## Screenshots
 
 ![Screenshot 1](./screenshots/Screenshot1.png)
@@ -52,4 +52,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the React Native and TypeScript communities for their valuable resources and support.
 
-Happy expense tracking!
+Happy expense tracking!💫
