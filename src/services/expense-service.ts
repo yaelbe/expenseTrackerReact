@@ -151,22 +151,11 @@ const filterExpenseFromDatabase = async (expense: ExpenseData) => {
     try {
       const db = await openDatabase();
 
-      let nameFilter: string | null = null;
-      let amountFilter: number | null = null;
-      let dateFilter: string | null = null;
-      let userFilter: string = '';
-
-      if (expense) {
-        const {name, amount, date, user} = expense;
-        nameFilter = name.trim() === '' ? null : name + '%';
-        amountFilter = isNaN(amount) || amount === 0 ? null : amount;
-        dateFilter = date.trim() === '' ? null : date;
-        userFilter = user;
-      } else {
-        // If expense is null, return all expenses
-        resolve(fetchExpensesFromDatabase(userFilter));
-        return;
-      }
+      const {name, amount, date, user} = expense;
+      const nameFilter = name.trim() === '' ? null : name + '%';
+      const amountFilter = isNaN(amount) || amount === 0 ? null : amount;
+      const dateFilter = date.trim() === '' ? null : date;
+      const userFilter = user;
 
       db.transaction(
         tx => {

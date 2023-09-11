@@ -39,7 +39,7 @@ const HomeScreen: React.FC = () => {
     if (!isFilter) {
       dispatch(expenseActions.deleteExpense(expenseData.id));
     } else {
-      dispatch(expenseActions.filterExpense());
+      dispatch(expenseActions.fetchExpenses());
     }
     setSelectedExpenseData(expenseData);
     setIsBottomSheetOpen(false);
@@ -70,7 +70,7 @@ const HomeScreen: React.FC = () => {
     <>
       <HomeScreenHeader handleOpenFilter={handleOpenFilter} />
       {expenses.length === 0 ? (
-        <EmptyExpenseScreen />
+        <EmptyExpenseScreen isFilterMode={isFilter} />
       ) : (
         <ExpenseSectionList onItemPress={handleOpenExpenseBottomSheet} />
       )}

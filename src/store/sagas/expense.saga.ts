@@ -66,7 +66,7 @@ function* handleFilterExpense(action: ExpenseAction) {
     );
     yield put(expenseActions.setExpenses(expenses));
   } catch (error) {
-    console.error('Error deleting expense from server:', error);
+    console.error('Error filtering expense from server:', error);
   }
 }
 
