@@ -10,7 +10,7 @@ import Colors from '../constants/colors';
 const ProfileScreen = () => {
   const avatarImage = require('../assets/avatar.png');
 
-  var navigation = useNavigation();
+  const navigation = useNavigation();
 
   const dispatch = useDispatch();
 
